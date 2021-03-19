@@ -19,7 +19,19 @@ from sklearn.model_selection import train_test_split #partir los datos en entran
 
 
 def run():
-    jo
+    dt_heart = pd.read_csv('./datasets/heart/heart.csv') #cargamos el dataset
+    
+    dt_features = dt_heart.drop(['target'],axis=1) # sin la columa de target que es la que queremos clasificar
+    #como se va hacer en las columnas ponemos acis =1
+    dt_target = dt_heart['target'] 
+
+    dt_features = StandardScaler().fit_transform(dt_features) #normalizar los features
+
+    x_train, x_test, y_train, y_test = train_test_split(dt_features, dt_target, test_size=0.3, random_state=42) #partimos de los datos
+    # el conjunto de entrenamiento test_size es el tamaño del conjunto de entrenamiento 
+    # cada que usamos esta funcion va a partir los datos entre entrenamiento y pruebas, pero el porcentage
+    # de uso de estos siempre es aleatorio , con randon state lo que hacemos es que fijamos esta aleatoriedad, para que siempre nos de 
+    # la misma conclusion
 
 
 
