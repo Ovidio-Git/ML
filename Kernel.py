@@ -48,10 +48,13 @@ def run():
     print("SCORE KPCA:", logistic.score(dt_test, y_test))
     
 
-
-
-
-
     
 if __name__ == '__main__':
     run()
+
+
+
+#                        OUTPUT DEL ALGORITMO
+#
+#  SCORE KPCA: 0.7987012987012987
+#

@@ -63,3 +63,11 @@ def run():
 
 if __name__ == '__main__':
     run()
+
+
+#                        OUTPUT DEL ALGORITMO
+# (717, 13)
+# (717,)
+#
+# SCORE PCA: 0.7857142857142857
+# SCORE IPCA: 0.8051948051948052
