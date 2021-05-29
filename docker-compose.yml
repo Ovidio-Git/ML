@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+
+  app:
+    build: .
+    restart: always
+    container_name: machine
+    volumes:
+      - .:/app #BIND MOUNT for put data in container

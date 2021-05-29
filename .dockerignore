@@ -1,0 +1,8 @@
+docker-compose.yml
+dockerfile
+.dockerignore
+gradient\ descent/
+datasets/
+Regresion\ Lineal/
+README.md
+things/
